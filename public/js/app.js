@@ -1,4 +1,3 @@
-// const url = 'http://localhost:3000/weather?address=tempe';
 const output = document.querySelector('#output');
 const error = document.querySelector('#error');
 const weatherForm = document.querySelector('form');
