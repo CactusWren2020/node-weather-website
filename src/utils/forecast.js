@@ -11,7 +11,7 @@ const forecast = (longitude, latitude, callback) => {
             callback('unable to find that location', undefined);
         } else {
             const data = body.current;
-            const message = 'It is currently ' + data.weather_descriptions[0] + ' and ' + data.temperature + ' degrees out. It feels like ' + data.feelslike + ' degrees out.';
+            const message = 'It is currently ' + data.weather_descriptions[0] + ' and ' + data.temperature + ' degrees out. It feels like ' + data.feelslike + ' degrees out. For you sailors, the pressure is ' + data.pressure + ' and the wind direction is ' + data.wind_dir;
             callback(undefined, message);
         }
     });
